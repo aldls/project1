@@ -14,7 +14,6 @@ drawable ic_home_black_24dp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_notifications_black_24dp
-id additionalTextView
 id container
 id mobile_navigation
 id nav_host_fragment_activity_main
@@ -26,7 +25,6 @@ id text_dashboard
 id text_home
 id text_notifications
 layout activity_main
-layout fragment_blank3
 layout fragment_dashboard
 layout fragment_home
 layout fragment_notifications
@@ -35,7 +33,6 @@ mipmap ic_launcher
 mipmap ic_launcher_round
 navigation mobile_navigation
 string app_name
-string hello_blank_fragment
 string title_dashboard
 string title_home
 string title_notifications
