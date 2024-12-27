@@ -22,7 +22,7 @@ class HomeFragment : Fragment() {
     // onDestroyView.
     private val binding get() = _binding!!
     
-    private lateinit var contactinfoList: ArrayList<Contactinfo>
+    private lateinit var productinfoList: ArrayList<ProductInfo>
     private lateinit var adapter: MainListAdapter
     
 
@@ -42,18 +42,15 @@ class HomeFragment : Fragment() {
 //            textView.text = it
 //        }
 
-        contactinfoList = arrayListOf(
-            Contactinfo("Jeong Minji", "010-1234-1234", "william.minji.harrison@example-pet-store.com", "humanicon"),
-            Contactinfo("Alice","010-7890-7890","william.alice.harrison@example-pet-store.com","humanicon"),
-            Contactinfo("Jeong inho", "010-1234-1234", "william.minji.harrison@example-pet-store.com", "humanicon"),
-            Contactinfo("Kang Minji", "010-1234-1234", "william.minji.harrison@example-pet-store.com", "humanicon"),
-            Contactinfo("July","010-7890-7890","william.alice.harrison@example-pet-store.com","humanicon"),
-            Contactinfo("Kim Minji", "010-1234-1234", "william.minji.harrison@example-pet-store.com", "humanicon"),
-            Contactinfo("Mark","010-7890-7890","william.alice.harrison@example-pet-store.com","humanicon"),
-            Contactinfo("Park Minji", "010-1234-1234", "william.minji.harrison@example-pet-store.com", "humanicon")
+        productinfoList = arrayListOf(
+            ProductInfo("red shoes","11,000","www.naver.com","humanicon"),
+            ProductInfo("blue shoes","12,000","www.naver.com","humanicon"),
+            ProductInfo("red pants","43,000","www.naver.com","humanicon"),
+            ProductInfo("jacket","11,000","www.naver.com","humanicon"),
+            ProductInfo("pink shorts","16,000","www.naver.com","humanicon")
         )
         
-        adapter = MainListAdapter(requireContext(), contactinfoList)
+        adapter = MainListAdapter(requireContext(), productinfoList)
         
         val listView: ListView = root.findViewById(R.id.mainListView)
         listView.adapter = adapter
@@ -61,7 +58,7 @@ class HomeFragment : Fragment() {
 //        팝업으로 입력 받기
         val addButton: Button = root.findViewById(R.id.addButton)
         addButton.setOnClickListener{
-            showAddContactDialog()
+            showAddProductDialog()
         }
         return root
 
@@ -72,30 +69,30 @@ class HomeFragment : Fragment() {
         _binding = null
     }
 
-    private fun showAddContactDialog(){
+    private fun showAddProductDialog(){
         val dialog = Dialog(requireContext())
-        dialog.setContentView(R.layout.dialog_add_contact)
+        dialog.setContentView(R.layout.dialog_add_product)
         dialog.setCancelable(true)
 
         val nameInput: EditText = dialog.findViewById(R.id.dialognameInput)
-        val phoneInput: EditText = dialog.findViewById(R.id.dialogphoneInput)
-        val emailInput: EditText = dialog.findViewById(R.id.dialogemailInput)
+        val priceInput: EditText = dialog.findViewById(R.id.dialogpriceInput)
+        val linkInput: EditText = dialog.findViewById(R.id.dialoglinkInput)
         val addButton: Button = dialog.findViewById(R.id.dialogaddButton)
 
         addButton.setOnClickListener{
             val name = nameInput.text.toString().trim()
-            val phone = phoneInput.text.toString().trim()
-            val email = emailInput.text.toString().trim()
+            val price = priceInput.text.toString().trim()
+            val link = linkInput.text.toString().trim()
 
-            if(name.isEmpty() || phone.isEmpty()){
-                Toast.makeText(requireContext(), "Please enter name and phone number", Toast.LENGTH_SHORT).show()
+            if(name.isEmpty()){
+                Toast.makeText(requireContext(), "Please enter product name", Toast.LENGTH_SHORT).show()
             }
             else{
-                val newContact = Contactinfo(name, phone, email, "humanicon")
-                contactinfoList.add(newContact)
+                val newProduct = ProductInfo(name, price, link, "humanicon")
+                productinfoList.add(newProduct)
                 adapter.notifyDataSetChanged()
                 dialog.dismiss()
-                Toast.makeText(requireContext(), "Contact added", Toast.LENGTH_SHORT).show()
+                Toast.makeText(requireContext(), "Product added", Toast.LENGTH_SHORT).show()
             }
         }
 

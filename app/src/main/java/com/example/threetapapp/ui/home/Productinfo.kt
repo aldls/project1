@@ -1,4 +1,3 @@
 package com.example.threetapapp.ui.home
 
-data class Wishlistinfo (val product: String, val price: Int, val email: String,val photo: String)
-//전화번호
+data class ProductInfo (val name: String, val price: String, val link: String, val photo: String)

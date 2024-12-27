@@ -5,37 +5,37 @@
     android:orientation="vertical"
     android:padding="16dp">
 
-    <!--    연락처 데이터 입력 받기-->
+    <!--    상품 데이터 입력 받기-->
 
     <EditText
         android:id="@+id/dialognameInput"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
-        android:hint="Enter name"
-        android:inputType="textPersonName" />
+        android:hint="Enter product name"
+        android:inputType="text"/>
 
     <EditText
-        android:id="@+id/dialogphoneInput"
+        android:id="@+id/dialogpriceInput"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter phone number"
-        android:inputType="phone"
-        android:layout_margin="8dp" />
+        android:hint="Enter price"
+        android:layout_margin="8dp"
+        android:inputType="text"/>
 
     <EditText
-        android:id="@+id/dialogemailInput"
+        android:id="@+id/dialoglinkInput"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter email address"
-        android:inputType="none"
-        android:layout_margin="8dp" />
+        android:hint="Enter link"
+        android:layout_margin="8dp"
+        android:inputType="text"/>
 
     <!--    추가 버튼-->
     <Button
         android:id="@+id/dialogaddButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Add Contact" />
+        android:text="Add Product" />
 
 </LinearLayout>

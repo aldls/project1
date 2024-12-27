@@ -29,24 +29,24 @@
         tools:next="name"/>
 
     <TextView
-        android:id="@+id/PhonenumTv"
+        android:id="@+id/PriceTv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="12dp"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="@+id/profileImg"
         app:layout_constraintStart_toStartOf="@+id/NameTv"
-        tools:text="Phonenum" />
+        tools:text="Price" />
 
     <TextView
-        android:id="@+id/EmailTv"
+        android:id="@+id/LinkTv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/PhonenumTv"
-        app:layout_constraintTop_toBottomOf="@+id/PhonenumTv"
-        tools:text="Email" />
+        app:layout_constraintStart_toStartOf="@+id/PriceTv"
+        app:layout_constraintTop_toBottomOf="@+id/PriceTv"
+        tools:text="Link" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
