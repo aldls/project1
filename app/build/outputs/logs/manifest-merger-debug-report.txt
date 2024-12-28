@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\water\AndroidStudioProjects\work\app\src\main\AndroidManifest.xml:2:1-27:12
-INJECTED from C:\Users\water\AndroidStudioProjects\work\app\src\main\AndroidManifest.xml:2:1-27:12
-INJECTED from C:\Users\water\AndroidStudioProjects\work\app\src\main\AndroidManifest.xml:2:1-27:12
-INJECTED from C:\Users\water\AndroidStudioProjects\work\app\src\main\AndroidManifest.xml:2:1-27:12
+ADDED from C:\Users\water\AndroidStudioProjects\work\app\src\main\AndroidManifest.xml:2:1-40:12
+INJECTED from C:\Users\water\AndroidStudioProjects\work\app\src\main\AndroidManifest.xml:2:1-40:12
+INJECTED from C:\Users\water\AndroidStudioProjects\work\app\src\main\AndroidManifest.xml:2:1-40:12
+INJECTED from C:\Users\water\AndroidStudioProjects\work\app\src\main\AndroidManifest.xml:2:1-40:12
 MERGED from [androidx.databinding:viewbinding:8.7.3] C:\Users\water\.gradle\caches\8.9\transforms\47fadeb8ead68a7c95b864e0e6b83b76\transformed\viewbinding-8.7.3\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.navigation:navigation-common:2.8.5] C:\Users\water\.gradle\caches\8.9\transforms\950fb32280e95979bbabfc80b4b1eae2\transformed\navigation-common-2.8.5\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-common-ktx:2.8.5] C:\Users\water\.gradle\caches\8.9\transforms\03201dfd241d1c5da31d2a98053a5b54\transformed\navigation-common-ktx-2.8.5\AndroidManifest.xml:2:1-7:12
@@ -19,6 +19,7 @@ MERGED from [androidx.appcompat:appcompat-resources:1.7.0] C:\Users\water\.gradl
 MERGED from [androidx.appcompat:appcompat:1.7.0] C:\Users\water\.gradle\caches\8.9\transforms\cdc6754bd6a3a4a649569c230d9c78b9\transformed\appcompat-1.7.0\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] C:\Users\water\.gradle\caches\8.9\transforms\2f3cbd2f381ee7d750800a85bec0db65\transformed\emoji2-views-helper-1.3.0\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.emoji2:emoji2:1.3.0] C:\Users\water\.gradle\caches\8.9\transforms\317577811119fce2219735e7b5833879\transformed\emoji2-1.3.0\AndroidManifest.xml:17:1-35:12
+MERGED from [com.github.bumptech.glide:glide:4.15.1] C:\Users\water\.gradle\caches\8.9\transforms\ff1ff71798c38ecd379f986b032816cc\transformed\glide-4.15.1\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\water\.gradle\caches\8.9\transforms\06fcf2d58d6eb61bec9bce3871f1b5bc\transformed\viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.fragment:fragment-ktx:1.6.2] C:\Users\water\.gradle\caches\8.9\transforms\b213c5ea3bc959c72cfa583becbc6270\transformed\fragment-ktx-1.6.2\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.fragment:fragment:1.6.2] C:\Users\water\.gradle\caches\8.9\transforms\a79e7a52de5fe528ad38f89007fbeeaf\transformed\fragment-1.6.2\AndroidManifest.xml:17:1-22:12
@@ -44,14 +45,16 @@ MERGED from [androidx.lifecycle:lifecycle-runtime-ktx-android:2.8.7] C:\Users\wa
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.8.7] C:\Users\water\.gradle\caches\8.9\transforms\33ee1257f18f8f7322e65950e46921ec\transformed\lifecycle-viewmodel-2.8.7\AndroidManifest.xml:2:1-5:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-android:2.8.7] C:\Users\water\.gradle\caches\8.9\transforms\90cf35ade1468703fe649835ad7ef13c\transformed\lifecycle-viewmodel-release\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-runtime-android:2.8.7] C:\Users\water\.gradle\caches\8.9\transforms\8df8402956cc62c8a16eca9a5a550f5b\transformed\lifecycle-runtime-release\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.8.7] C:\Users\water\.gradle\caches\8.9\transforms\5fc675c7af16cca3c868b3bb2a54e533\transformed\lifecycle-livedata-core-2.8.7\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-process:2.8.7] C:\Users\water\.gradle\caches\8.9\transforms\64a212cd72289319c09964ed6eed6412\transformed\lifecycle-process-2.8.7\AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.8.7] C:\Users\water\.gradle\caches\8.9\transforms\5fc675c7af16cca3c868b3bb2a54e533\transformed\lifecycle-livedata-core-2.8.7\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.8.7] C:\Users\water\.gradle\caches\8.9\transforms\f86bc762b4e0bee911da96b52503e4e5\transformed\lifecycle-livedata-core-ktx-2.8.7\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.8.7] C:\Users\water\.gradle\caches\8.9\transforms\e31865915cf8235625a96deaf8a89aa5\transformed\lifecycle-livedata-2.8.7\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.8.7] C:\Users\water\.gradle\caches\8.9\transforms\ee36cc37d3d3b7905ff9c119ecdfa641\transformed\lifecycle-livedata-ktx-2.8.7\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.7] C:\Users\water\.gradle\caches\8.9\transforms\49e75db87a733cccd60f7fe87117602d\transformed\lifecycle-viewmodel-ktx-2.8.7\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.8.7] C:\Users\water\.gradle\caches\8.9\transforms\6c4b7df11a77be4eed1346504355cb67\transformed\lifecycle-viewmodel-savedstate-2.8.7\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.core:core-ktx:1.15.0] C:\Users\water\.gradle\caches\8.9\transforms\19ce85e5f8ecf328fff470eed4d04535\transformed\core-ktx-1.15.0\AndroidManifest.xml:2:1-7:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.15.1] C:\Users\water\.gradle\caches\8.9\transforms\c072408eff76778940553a2c4748ed0a\transformed\gifdecoder-4.15.1\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.exifinterface:exifinterface:1.3.3] C:\Users\water\.gradle\caches\8.9\transforms\26fa99ac2203cf0a3934533a4e97c26d\transformed\exifinterface-1.3.3\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\water\.gradle\caches\8.9\transforms\64b90b7b9ca42ba99e43a8971a9c64e6\transformed\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\water\.gradle\caches\8.9\transforms\c51cb6c37ac4fff922e3e718c6923214\transformed\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\water\.gradle\caches\8.9\transforms\3e5404b272faf1dbfd0a759ea20c2e97\transformed\profileinstaller-1.4.0\AndroidManifest.xml:17:1-55:12
@@ -74,21 +77,29 @@ MERGED from [androidx.annotation:annotation-experimental:1.4.1] C:\Users\water\.
 		INJECTED from C:\Users\water\AndroidStudioProjects\work\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\water\AndroidStudioProjects\work\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from C:\Users\water\AndroidStudioProjects\work\app\src\main\AndroidManifest.xml:4:5-80
+	android:name
+		ADDED from C:\Users\water\AndroidStudioProjects\work\app\src\main\AndroidManifest.xml:4:22-77
 application
-ADDED from C:\Users\water\AndroidStudioProjects\work\app\src\main\AndroidManifest.xml:5:5-25:19
-INJECTED from C:\Users\water\AndroidStudioProjects\work\app\src\main\AndroidManifest.xml:5:5-25:19
+ADDED from C:\Users\water\AndroidStudioProjects\work\app\src\main\AndroidManifest.xml:6:5-38:19
+INJECTED from C:\Users\water\AndroidStudioProjects\work\app\src\main\AndroidManifest.xml:6:5-38:19
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\water\.gradle\caches\8.9\transforms\bdbba52de9ea4072d831d87e8939396f\transformed\material-1.12.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\water\.gradle\caches\8.9\transforms\bdbba52de9ea4072d831d87e8939396f\transformed\material-1.12.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.2.0] C:\Users\water\.gradle\caches\8.9\transforms\8017d68912eb471906949818f95a631c\transformed\constraintlayout-2.2.0\AndroidManifest.xml:7:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.2.0] C:\Users\water\.gradle\caches\8.9\transforms\8017d68912eb471906949818f95a631c\transformed\constraintlayout-2.2.0\AndroidManifest.xml:7:5-20
 MERGED from [androidx.emoji2:emoji2:1.3.0] C:\Users\water\.gradle\caches\8.9\transforms\317577811119fce2219735e7b5833879\transformed\emoji2-1.3.0\AndroidManifest.xml:23:5-33:19
 MERGED from [androidx.emoji2:emoji2:1.3.0] C:\Users\water\.gradle\caches\8.9\transforms\317577811119fce2219735e7b5833879\transformed\emoji2-1.3.0\AndroidManifest.xml:23:5-33:19
+MERGED from [com.github.bumptech.glide:glide:4.15.1] C:\Users\water\.gradle\caches\8.9\transforms\ff1ff71798c38ecd379f986b032816cc\transformed\glide-4.15.1\AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:glide:4.15.1] C:\Users\water\.gradle\caches\8.9\transforms\ff1ff71798c38ecd379f986b032816cc\transformed\glide-4.15.1\AndroidManifest.xml:9:5-20
 MERGED from [androidx.window:window:1.0.0] C:\Users\water\.gradle\caches\8.9\transforms\5b9fd34e7196fde40124af89787f3727\transformed\window-1.0.0\AndroidManifest.xml:24:5-31:19
 MERGED from [androidx.window:window:1.0.0] C:\Users\water\.gradle\caches\8.9\transforms\5b9fd34e7196fde40124af89787f3727\transformed\window-1.0.0\AndroidManifest.xml:24:5-31:19
 MERGED from [androidx.core:core:1.15.0] C:\Users\water\.gradle\caches\8.9\transforms\d190cadb327a3d24d727635993fc65a3\transformed\core-1.15.0\AndroidManifest.xml:28:5-89
 MERGED from [androidx.core:core:1.15.0] C:\Users\water\.gradle\caches\8.9\transforms\d190cadb327a3d24d727635993fc65a3\transformed\core-1.15.0\AndroidManifest.xml:28:5-89
 MERGED from [androidx.lifecycle:lifecycle-process:2.8.7] C:\Users\water\.gradle\caches\8.9\transforms\64a212cd72289319c09964ed6eed6412\transformed\lifecycle-process-2.8.7\AndroidManifest.xml:23:5-33:19
 MERGED from [androidx.lifecycle:lifecycle-process:2.8.7] C:\Users\water\.gradle\caches\8.9\transforms\64a212cd72289319c09964ed6eed6412\transformed\lifecycle-process-2.8.7\AndroidManifest.xml:23:5-33:19
+MERGED from [com.github.bumptech.glide:gifdecoder:4.15.1] C:\Users\water\.gradle\caches\8.9\transforms\c072408eff76778940553a2c4748ed0a\transformed\gifdecoder-4.15.1\AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.15.1] C:\Users\water\.gradle\caches\8.9\transforms\c072408eff76778940553a2c4748ed0a\transformed\gifdecoder-4.15.1\AndroidManifest.xml:9:5-20
 MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\water\.gradle\caches\8.9\transforms\3e5404b272faf1dbfd0a759ea20c2e97\transformed\profileinstaller-1.4.0\AndroidManifest.xml:23:5-53:19
 MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\water\.gradle\caches\8.9\transforms\3e5404b272faf1dbfd0a759ea20c2e97\transformed\profileinstaller-1.4.0\AndroidManifest.xml:23:5-53:19
 MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\water\.gradle\caches\8.9\transforms\f963cc67a625f4545bfccb5e68ce606a\transformed\startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
@@ -100,41 +111,57 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\wa
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.15.0] C:\Users\water\.gradle\caches\8.9\transforms\d190cadb327a3d24d727635993fc65a3\transformed\core-1.15.0\AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from C:\Users\water\AndroidStudioProjects\work\app\src\main\AndroidManifest.xml:12:9-35
+		ADDED from C:\Users\water\AndroidStudioProjects\work\app\src\main\AndroidManifest.xml:15:9-35
 	android:label
-		ADDED from C:\Users\water\AndroidStudioProjects\work\app\src\main\AndroidManifest.xml:10:9-41
+		ADDED from C:\Users\water\AndroidStudioProjects\work\app\src\main\AndroidManifest.xml:13:9-41
 	android:fullBackupContent
-		ADDED from C:\Users\water\AndroidStudioProjects\work\app\src\main\AndroidManifest.xml:8:9-54
-	android:roundIcon
 		ADDED from C:\Users\water\AndroidStudioProjects\work\app\src\main\AndroidManifest.xml:11:9-54
+	android:roundIcon
+		ADDED from C:\Users\water\AndroidStudioProjects\work\app\src\main\AndroidManifest.xml:14:9-54
 	tools:targetApi
-		ADDED from C:\Users\water\AndroidStudioProjects\work\app\src\main\AndroidManifest.xml:14:9-29
+		ADDED from C:\Users\water\AndroidStudioProjects\work\app\src\main\AndroidManifest.xml:17:9-29
 	android:icon
-		ADDED from C:\Users\water\AndroidStudioProjects\work\app\src\main\AndroidManifest.xml:9:9-43
+		ADDED from C:\Users\water\AndroidStudioProjects\work\app\src\main\AndroidManifest.xml:12:9-43
 	android:allowBackup
-		ADDED from C:\Users\water\AndroidStudioProjects\work\app\src\main\AndroidManifest.xml:6:9-35
+		ADDED from C:\Users\water\AndroidStudioProjects\work\app\src\main\AndroidManifest.xml:9:9-35
 	android:theme
-		ADDED from C:\Users\water\AndroidStudioProjects\work\app\src\main\AndroidManifest.xml:13:9-51
+		ADDED from C:\Users\water\AndroidStudioProjects\work\app\src\main\AndroidManifest.xml:16:9-51
 	android:dataExtractionRules
-		ADDED from C:\Users\water\AndroidStudioProjects\work\app\src\main\AndroidManifest.xml:7:9-65
-activity#com.example.myapplication.MainActivity
-ADDED from C:\Users\water\AndroidStudioProjects\work\app\src\main\AndroidManifest.xml:15:9-24:20
-	android:label
-		ADDED from C:\Users\water\AndroidStudioProjects\work\app\src\main\AndroidManifest.xml:18:13-45
+		ADDED from C:\Users\water\AndroidStudioProjects\work\app\src\main\AndroidManifest.xml:10:9-65
+provider#androidx.core.content.FileProvider
+ADDED from C:\Users\water\AndroidStudioProjects\work\app\src\main\AndroidManifest.xml:18:9-26:20
+	android:grantUriPermissions
+		ADDED from C:\Users\water\AndroidStudioProjects\work\app\src\main\AndroidManifest.xml:22:13-47
+	android:authorities
+		ADDED from C:\Users\water\AndroidStudioProjects\work\app\src\main\AndroidManifest.xml:20:13-73
 	android:exported
-		ADDED from C:\Users\water\AndroidStudioProjects\work\app\src\main\AndroidManifest.xml:17:13-36
+		ADDED from C:\Users\water\AndroidStudioProjects\work\app\src\main\AndroidManifest.xml:21:13-37
 	android:name
-		ADDED from C:\Users\water\AndroidStudioProjects\work\app\src\main\AndroidManifest.xml:16:13-41
+		ADDED from C:\Users\water\AndroidStudioProjects\work\app\src\main\AndroidManifest.xml:19:13-62
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from C:\Users\water\AndroidStudioProjects\work\app\src\main\AndroidManifest.xml:23:13-25:54
+	android:resource
+		ADDED from C:\Users\water\AndroidStudioProjects\work\app\src\main\AndroidManifest.xml:25:17-51
+	android:name
+		ADDED from C:\Users\water\AndroidStudioProjects\work\app\src\main\AndroidManifest.xml:24:17-67
+activity#com.example.myapplication.MainActivity
+ADDED from C:\Users\water\AndroidStudioProjects\work\app\src\main\AndroidManifest.xml:28:9-37:20
+	android:label
+		ADDED from C:\Users\water\AndroidStudioProjects\work\app\src\main\AndroidManifest.xml:31:13-45
+	android:exported
+		ADDED from C:\Users\water\AndroidStudioProjects\work\app\src\main\AndroidManifest.xml:30:13-36
+	android:name
+		ADDED from C:\Users\water\AndroidStudioProjects\work\app\src\main\AndroidManifest.xml:29:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\water\AndroidStudioProjects\work\app\src\main\AndroidManifest.xml:19:13-23:29
+ADDED from C:\Users\water\AndroidStudioProjects\work\app\src\main\AndroidManifest.xml:32:13-36:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\water\AndroidStudioProjects\work\app\src\main\AndroidManifest.xml:20:17-69
+ADDED from C:\Users\water\AndroidStudioProjects\work\app\src\main\AndroidManifest.xml:33:17-69
 	android:name
-		ADDED from C:\Users\water\AndroidStudioProjects\work\app\src\main\AndroidManifest.xml:20:25-66
+		ADDED from C:\Users\water\AndroidStudioProjects\work\app\src\main\AndroidManifest.xml:33:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\water\AndroidStudioProjects\work\app\src\main\AndroidManifest.xml:22:17-77
+ADDED from C:\Users\water\AndroidStudioProjects\work\app\src\main\AndroidManifest.xml:35:17-77
 	android:name
-		ADDED from C:\Users\water\AndroidStudioProjects\work\app\src\main\AndroidManifest.xml:22:27-74
+		ADDED from C:\Users\water\AndroidStudioProjects\work\app\src\main\AndroidManifest.xml:35:27-74
 uses-sdk
 INJECTED from C:\Users\water\AndroidStudioProjects\work\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\water\AndroidStudioProjects\work\app\src\main\AndroidManifest.xml
@@ -169,6 +196,8 @@ MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] C:\Users\water\.gradle\c
 MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] C:\Users\water\.gradle\caches\8.9\transforms\2f3cbd2f381ee7d750800a85bec0db65\transformed\emoji2-views-helper-1.3.0\AndroidManifest.xml:5:5-44
 MERGED from [androidx.emoji2:emoji2:1.3.0] C:\Users\water\.gradle\caches\8.9\transforms\317577811119fce2219735e7b5833879\transformed\emoji2-1.3.0\AndroidManifest.xml:21:5-44
 MERGED from [androidx.emoji2:emoji2:1.3.0] C:\Users\water\.gradle\caches\8.9\transforms\317577811119fce2219735e7b5833879\transformed\emoji2-1.3.0\AndroidManifest.xml:21:5-44
+MERGED from [com.github.bumptech.glide:glide:4.15.1] C:\Users\water\.gradle\caches\8.9\transforms\ff1ff71798c38ecd379f986b032816cc\transformed\glide-4.15.1\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:glide:4.15.1] C:\Users\water\.gradle\caches\8.9\transforms\ff1ff71798c38ecd379f986b032816cc\transformed\glide-4.15.1\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\water\.gradle\caches\8.9\transforms\06fcf2d58d6eb61bec9bce3871f1b5bc\transformed\viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\water\.gradle\caches\8.9\transforms\06fcf2d58d6eb61bec9bce3871f1b5bc\transformed\viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.fragment:fragment-ktx:1.6.2] C:\Users\water\.gradle\caches\8.9\transforms\b213c5ea3bc959c72cfa583becbc6270\transformed\fragment-ktx-1.6.2\AndroidManifest.xml:20:5-44
@@ -219,10 +248,10 @@ MERGED from [androidx.lifecycle:lifecycle-viewmodel-android:2.8.7] C:\Users\wate
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-android:2.8.7] C:\Users\water\.gradle\caches\8.9\transforms\90cf35ade1468703fe649835ad7ef13c\transformed\lifecycle-viewmodel-release\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-runtime-android:2.8.7] C:\Users\water\.gradle\caches\8.9\transforms\8df8402956cc62c8a16eca9a5a550f5b\transformed\lifecycle-runtime-release\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-runtime-android:2.8.7] C:\Users\water\.gradle\caches\8.9\transforms\8df8402956cc62c8a16eca9a5a550f5b\transformed\lifecycle-runtime-release\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.8.7] C:\Users\water\.gradle\caches\8.9\transforms\5fc675c7af16cca3c868b3bb2a54e533\transformed\lifecycle-livedata-core-2.8.7\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.8.7] C:\Users\water\.gradle\caches\8.9\transforms\5fc675c7af16cca3c868b3bb2a54e533\transformed\lifecycle-livedata-core-2.8.7\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-process:2.8.7] C:\Users\water\.gradle\caches\8.9\transforms\64a212cd72289319c09964ed6eed6412\transformed\lifecycle-process-2.8.7\AndroidManifest.xml:21:5-44
 MERGED from [androidx.lifecycle:lifecycle-process:2.8.7] C:\Users\water\.gradle\caches\8.9\transforms\64a212cd72289319c09964ed6eed6412\transformed\lifecycle-process-2.8.7\AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.8.7] C:\Users\water\.gradle\caches\8.9\transforms\5fc675c7af16cca3c868b3bb2a54e533\transformed\lifecycle-livedata-core-2.8.7\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.8.7] C:\Users\water\.gradle\caches\8.9\transforms\5fc675c7af16cca3c868b3bb2a54e533\transformed\lifecycle-livedata-core-2.8.7\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.8.7] C:\Users\water\.gradle\caches\8.9\transforms\f86bc762b4e0bee911da96b52503e4e5\transformed\lifecycle-livedata-core-ktx-2.8.7\AndroidManifest.xml:5:5-44
 MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.8.7] C:\Users\water\.gradle\caches\8.9\transforms\f86bc762b4e0bee911da96b52503e4e5\transformed\lifecycle-livedata-core-ktx-2.8.7\AndroidManifest.xml:5:5-44
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.8.7] C:\Users\water\.gradle\caches\8.9\transforms\e31865915cf8235625a96deaf8a89aa5\transformed\lifecycle-livedata-2.8.7\AndroidManifest.xml:20:5-44
@@ -235,6 +264,10 @@ MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.8.7] C:\Users\w
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.8.7] C:\Users\water\.gradle\caches\8.9\transforms\6c4b7df11a77be4eed1346504355cb67\transformed\lifecycle-viewmodel-savedstate-2.8.7\AndroidManifest.xml:20:5-44
 MERGED from [androidx.core:core-ktx:1.15.0] C:\Users\water\.gradle\caches\8.9\transforms\19ce85e5f8ecf328fff470eed4d04535\transformed\core-ktx-1.15.0\AndroidManifest.xml:5:5-44
 MERGED from [androidx.core:core-ktx:1.15.0] C:\Users\water\.gradle\caches\8.9\transforms\19ce85e5f8ecf328fff470eed4d04535\transformed\core-ktx-1.15.0\AndroidManifest.xml:5:5-44
+MERGED from [com.github.bumptech.glide:gifdecoder:4.15.1] C:\Users\water\.gradle\caches\8.9\transforms\c072408eff76778940553a2c4748ed0a\transformed\gifdecoder-4.15.1\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.15.1] C:\Users\water\.gradle\caches\8.9\transforms\c072408eff76778940553a2c4748ed0a\transformed\gifdecoder-4.15.1\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.exifinterface:exifinterface:1.3.3] C:\Users\water\.gradle\caches\8.9\transforms\26fa99ac2203cf0a3934533a4e97c26d\transformed\exifinterface-1.3.3\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.3.3] C:\Users\water\.gradle\caches\8.9\transforms\26fa99ac2203cf0a3934533a4e97c26d\transformed\exifinterface-1.3.3\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\water\.gradle\caches\8.9\transforms\64b90b7b9ca42ba99e43a8971a9c64e6\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\water\.gradle\caches\8.9\transforms\64b90b7b9ca42ba99e43a8971a9c64e6\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\water\.gradle\caches\8.9\transforms\c51cb6c37ac4fff922e3e718c6923214\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
