@@ -1,4 +1,4 @@
-package com.example.threetapapp.ui.test
+package com.example.myapplication.ui.test
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,8 +7,8 @@ import android.view.ViewGroup
 import android.widget.RadioButton
 import android.widget.Toast
 import androidx.fragment.app.Fragment
-import com.example.threetapapp.databinding.FragmentTestBinding
-import com.example.threetapapp.ui.notifications.Question
+import com.example.myapplication.databinding.FragmentTestBinding
+import com.example.myapplication.ui.notifications.Question
 
 
 class TestFragment : Fragment() {

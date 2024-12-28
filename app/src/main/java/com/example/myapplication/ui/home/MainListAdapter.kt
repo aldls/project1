@@ -1,4 +1,4 @@
-package com.example.threetapapp.ui.home
+package com.example.myapplication.ui.home
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import android.widget.BaseAdapter
 import android.widget.ImageView
 import android.widget.TextView
-import com.example.threetapapp.R
+import com.example.myapplication.R
 
 class MainListAdapter (val context: Context, val productinfoList: ArrayList<ProductInfo>) : BaseAdapter() {
 

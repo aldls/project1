@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.threetapapp"
+    namespace = "com.example.myapplication"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.example.threetapapp"
+        applicationId = "com.example.myapplication"
         minSdk = 24
         targetSdk = 34
         versionCode = 1

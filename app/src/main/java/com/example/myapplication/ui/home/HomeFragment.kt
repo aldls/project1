@@ -1,4 +1,4 @@
-package com.example.threetapapp.ui.home
+package com.example.myapplication.ui.home
 
 import android.app.Dialog
 import android.os.Bundle
@@ -11,8 +11,8 @@ import android.widget.ListView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import com.example.threetapapp.R
-import com.example.threetapapp.databinding.FragmentHomeBinding
+import com.example.myapplication.R
+import com.example.myapplication.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment() {
 
