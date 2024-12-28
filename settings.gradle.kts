@@ -19,6 +19,10 @@ dependencyResolutionManagement {
     }
 }
 
+<<<<<<< HEAD
 rootProject.name = "My Application"
+=======
+rootProject.name = "ThreeTapApp"
+>>>>>>> minji
 include(":app")
  

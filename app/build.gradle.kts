@@ -1,8 +1,11 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+<<<<<<< HEAD
     kotlin("kapt")
 
+=======
+>>>>>>> minji
 }
 
 android {
@@ -41,8 +44,12 @@ android {
 }
 
 dependencies {
+<<<<<<< HEAD
     implementation ("androidx.core:core-ktx:1.12.0")
     implementation("com.github.bumptech.glide:glide:4.15.1")
+=======
+
+>>>>>>> minji
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)

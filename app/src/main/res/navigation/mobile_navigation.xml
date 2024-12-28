@@ -13,13 +13,23 @@
 
     <fragment
         android:id="@+id/navigation_dashboard"
+<<<<<<< HEAD
         android:name="com.example.myapplication.ui.dashboard.GalleryFragment"
+=======
+        android:name="com.example.myapplication.ui.dashboard.DashboardFragment"
+>>>>>>> minji
         android:label="@string/title_dashboard"
         tools:layout="@layout/fragment_dashboard" />
 
     <fragment
         android:id="@+id/navigation_notifications"
+<<<<<<< HEAD
         android:name="com.example.myapplication.ui.notifications.NotificationsFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_notifications" />
+=======
+        android:name="com.example.myapplication.ui.test.TestFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_test" />
+>>>>>>> minji
 </navigation>
