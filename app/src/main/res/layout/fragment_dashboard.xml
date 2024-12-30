@@ -6,6 +6,20 @@
     android:layout_height="match_parent"
     tools:context=".ui.dashboard.GalleryFragment">
 
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/nestedTabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/nestedViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+
+
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
@@ -16,9 +30,10 @@
         android:id="@+id/buttonAddPhoto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="112dp"
         android:text="Add Photo"
-        tools:layout_editor_absoluteX="274dp"
-        tools:layout_editor_absoluteY="667dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

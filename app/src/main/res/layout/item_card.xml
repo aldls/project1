@@ -12,4 +12,17 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop" />
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#80000000"
+        android:padding="8dp"
+        android:text="Sample Text"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+
+
+
 </androidx.cardview.widget.CardView>
