@@ -2,6 +2,8 @@ package com.example.myapplication.ui.home
 
 import android.app.AlertDialog
 import android.app.Dialog
+import android.graphics.Color
+import android.graphics.drawable.ColorDrawable
 import android.icu.text.SimpleDateFormat
 import android.net.Uri
 import android.os.Bundle
@@ -69,6 +71,7 @@ class HomeFragment : Fragment() {
 
 //        팝업으로 입력 받기
         val addButton: Button = root.findViewById(R.id.addButton)
+
         addButton.setOnClickListener {
             showAddProductDialog()
         }
@@ -80,6 +83,8 @@ class HomeFragment : Fragment() {
         val dialog = Dialog(requireContext())
         dialog.setContentView(R.layout.dialog_add_product)
         dialog.setCancelable(true)
+        dialog.window?.setLayout(900, 1200)
+        dialog?.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
 
         val nameInput: EditText = dialog.findViewById(R.id.dialognameInput)
         val priceInput: EditText = dialog.findViewById(R.id.dialogpriceInput)
@@ -119,6 +124,9 @@ class HomeFragment : Fragment() {
                 adapter.notifyDataSetChanged()
                 dialog.dismiss()
                 Toast.makeText(requireContext(), "Product added", Toast.LENGTH_SHORT).show()
+
+//              매번 새로운 사진 입력값에 대해 확인하기 위해 초기화
+                selectedImageUri = null
             }
         }
 

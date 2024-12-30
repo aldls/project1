@@ -3,7 +3,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="@drawable/round">
 
     <!--    상품 데이터 입력 받기-->
 
@@ -11,7 +13,7 @@
         android:id="@+id/dialognameInput"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
+        android:layout_margin="8dp"
         android:hint="Enter product name"
         android:inputType="text"/>
 
@@ -42,6 +44,8 @@
         android:id="@+id/dialogaddButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Add Product" />
+        android:background="@drawable/round"
+        android:backgroundTint="#AA81DB"
+        android:text="Save" />
 
 </LinearLayout>
