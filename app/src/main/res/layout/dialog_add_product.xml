@@ -31,6 +31,12 @@
         android:layout_margin="8dp"
         android:inputType="text"/>
 
+    <Button
+        android:id="@+id/dialogselectPhotoButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Photo" />
+
     <!--    추가 버튼-->
     <Button
         android:id="@+id/dialogaddButton"

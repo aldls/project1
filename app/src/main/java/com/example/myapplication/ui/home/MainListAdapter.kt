@@ -33,20 +33,18 @@ class MainListAdapter (val context: Context, val productList: ArrayList<ProductI
 
         val view = convertView ?: LayoutInflater.from(context).inflate(R.layout.main_lv_item, parent, false)
 
-        val productImg = view.findViewById<ImageView>(R.id.profileImg)
-        val name = view.findViewById<TextView>(R.id.NameTv)
-        val price = view.findViewById<TextView>(R.id.PriceTv)
-        val link = view.findViewById<TextView>(R.id.LinkTv)
+        val nameTextView = view.findViewById<TextView>(R.id.NameTv)
+        val priceTextView = view.findViewById<TextView>(R.id.PriceTv)
+        val linkTextView = view.findViewById<TextView>(R.id.LinkTv)
+        val productImageView = view.findViewById<ImageView>(R.id.productImg)
 
         val product = productList[position]
-        val resourceId = context.resources.getIdentifier(product.photo, "drawable", context.packageName)
-        productImg.setImageResource(resourceId)
-        name.text = product.name
-        price.text = product.price
-        link.text = product.link
+        nameTextView.text = product.name
+        priceTextView.text = product.price
+        linkTextView.text = product.link
 
 
-        link.setOnClickListener {
+        linkTextView.setOnClickListener {
             val url = product.link
             if(url.isNotBlank() && (url.startsWith("http://") || url.startsWith("https://"))) {
                 val intent = Intent(Intent.ACTION_VIEW).apply {
@@ -57,6 +55,12 @@ class MainListAdapter (val context: Context, val productList: ArrayList<ProductI
             else{
                 Toast.makeText(context, "Invalid URL", Toast.LENGTH_SHORT).show()
             }
+        }
+
+        if (product.imageUri != null) {
+            productImageView.setImageURI(product.imageUri)
+        } else {
+            productImageView.setImageResource(R.drawable.gift) // 기본 이미지 설정
         }
 
 
