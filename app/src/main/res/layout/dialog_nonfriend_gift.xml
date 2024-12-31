@@ -11,43 +11,43 @@
     android:background="@drawable/round">
 
     <TextView
-        android:id="@+id/nonfriendnameInput"
+        android:id="@+id/relationInput"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
         android:text="Who?"/>
 
     <RadioGroup
-        android:id="@+id/personGroup"
+        android:id="@+id/relationGroup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintTop_toBottomOf="@id/nonfriendageInput"
+        app:layout_constraintTop_toBottomOf="@id/ageInput"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="16dp">
 
         <RadioButton
-            android:id="@+id/person1"
+            android:id="@+id/relation1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="친구" />
 
         <RadioButton
-            android:id="@+id/person2"
+            android:id="@+id/relation2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="가족" />
 
         <RadioButton
-            android:id="@+id/person3"
+            android:id="@+id/relation3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="지인" />
     </RadioGroup>
 
     <TextView
-        android:id="@+id/nonfriendageInput"
+        android:id="@+id/ageInput"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
@@ -58,7 +58,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintTop_toBottomOf="@id/nonfriendageInput"
+        app:layout_constraintTop_toBottomOf="@id/ageInput"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="16dp">
@@ -98,7 +98,7 @@
     <!--    추가 버튼-->
 
     <Button
-        android:id="@+id/dialogaddButton"
+        android:id="@+id/nonfriendaddButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/round"

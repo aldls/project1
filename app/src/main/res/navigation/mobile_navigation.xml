@@ -38,7 +38,7 @@
 
     <fragment
         android:id="@+id/third_randomgift"
-        android:name="com.example.myapplication.ui.second.SecondFragment"
+        android:name="com.example.myapplication.ui.third.ThirdFragment"
         android:label="Third Fragment"
         tools:layout="@layout/second_randomgift"/>
 
