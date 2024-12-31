@@ -32,15 +32,29 @@
         app:layout_constraintVertical_bias="0.499" />
 
     <Button
-        android:id="@+id/startButton"
+        android:id="@+id/friendButton"
         android:layout_width="180dp"
         android:layout_height="wrap_content"
-        android:text="시작하기"
         android:background="@drawable/round"
+        android:text="친구 선물 고르기 "
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintVertical_bias="0.8" />
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.701" />
+
+    <Button
+        android:id="@+id/notfriendButton"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round"
+        android:text="not 친구 선물 고르기"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.846" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

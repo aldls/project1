@@ -14,11 +14,14 @@ import android.view.WindowManager
 import android.widget.ArrayAdapter
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageView
 import android.widget.ListView
 import android.widget.SeekBar
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
+import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.example.myapplication.MainActivity
 import com.example.myapplication.R
 import com.example.myapplication.databinding.SecondRandomgiftBinding
@@ -29,98 +32,65 @@ class SecondFragment : Fragment() {
     private var _binding: SecondRandomgiftBinding? = null
 
     private val binding get() = _binding!!
-    private lateinit var friendList: List<String>
-
 //    adapter 만들어야함
 
-    override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
+    private val giftList = listOf(
+        "Gift 1 Info",
+        "Gift 2 Info",
+        "Gift 3 Info",
+        "Gift 4 Info",
+        "Gift 5 Info",
+        "Gift 6 Info",
+        "Gift 7 Info",
+        "Gift 8 Info",
+        "Gift 9 Info"
+    )
 
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
+    ): View? {
         _binding = SecondRandomgiftBinding.inflate(inflater, container, false)
         val root: View = binding.root
-        friendList = listOf("friend1", "friend2", "friend3")
+
+        val recyclerView: RecyclerView = root.findViewById(R.id.recyclerView)
+        recyclerView.layoutManager = GridLayoutManager(requireContext(), 3)
+        recyclerView.adapter = GiftAdapter(giftList)
 
         return root
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
+    class GiftAdapter(private val giftList: List<String>) : RecyclerView.Adapter<GiftAdapter.GiftViewHolder>() {
 
-        binding.friendButton.setOnClickListener {
-            showFriendSearchDialog(requireContext(),friendList)
-            findNavController().navigate(R.id.action_second_to_result)
+        private val clickedItems = mutableSetOf<Int>()
+
+        override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): GiftViewHolder {
+            val view = LayoutInflater.from(parent.context).inflate(R.layout.item_gift, parent, false)
+            return GiftViewHolder(view)
         }
-    }
 
-    private fun showFriendSearchDialog(context: Context, friendList: List<String>) {
-        // Inflate the custom layout
-        val dialogView = LayoutInflater.from(context).inflate(R.layout.dialog_friend_gift, null)
+        override fun onBindViewHolder(holder: GiftViewHolder, position: Int) {
+            val isClicked = clickedItems.contains(position)
+            holder.giftImage.setImageResource(if (isClicked) R.drawable.openedgift else R.drawable.closedgift)
 
-        val searchInput = dialogView.findViewById<EditText>(R.id.friendnameInput)
-        val listView = dialogView.findViewById<ListView>(R.id.friendlistView)
-        val priceRangeText = dialogView.findViewById<TextView>(R.id.friendpriceInput)
-        val priceSeekBar = dialogView.findViewById<SeekBar>(R.id.price_seekbar)
-        val friendaddButton = dialogView.findViewById<Button>(R.id.friendaddButton)
+            holder.itemView.setOnClickListener {
+                clickedItems.add(position)
+                notifyItemChanged(position)
 
-//        친구 리스트 표시를 위한 어댑터
-        val mutableFriendList = friendList.toMutableList()
-        val adapter = ArrayAdapter(context, android.R.layout.simple_list_item_1, friendList)
-        listView.adapter = adapter
-
-        searchInput.addTextChangedListener(object : TextWatcher {
-            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
-
-            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-                // Filter the list based on the search query
-                val filteredList = friendList.filter { it.contains(s.toString(), ignoreCase = true) }
-                mutableFriendList.clear()
-                mutableFriendList.addAll(filteredList)
-                adapter.notifyDataSetChanged()
+                AlertDialog.Builder(holder.itemView.context)
+                    .setTitle("Gift Information")
+                    .setMessage(giftList[position])
+                    .setPositiveButton("OK") { dialog, _ ->
+                        dialog.dismiss()
+                    }
+                    .show()
             }
-
-            override fun afterTextChanged(s: Editable?) {}
-        })
-        // Set initial values for price range
-        priceSeekBar.max = 100000 // Example max price
-        priceSeekBar.progress = 5000 // Default progress
-        priceRangeText.text = "Current Price: ${priceSeekBar.progress}"
-
-        priceSeekBar.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener {
-            override fun onProgressChanged(seekBar: SeekBar?, progress: Int, fromUser: Boolean) {
-                priceRangeText.text = "Current Price: $progress"
-            }
-
-            override fun onStartTrackingTouch(seekBar: SeekBar?) {}
-            override fun onStopTrackingTouch(seekBar: SeekBar?) {}
-        })
-
-        // Create and show the dialog
-        val dialog = AlertDialog.Builder(context)
-            .setTitle("Friend Search")
-            .setView(dialogView)
-            .setNegativeButton("Cancel", null)
-            .create()
-        friendaddButton.setOnClickListener {
-            val selectedFriend = searchInput.text.toString()
-            val selectedPrice = priceSeekBar.progress
-
-            // Handle the search logic here
-            Toast.makeText(context, "Searching for: $selectedFriend with max price $selectedPrice", Toast.LENGTH_SHORT).show()
-
-            val intent = Intent(context, MainActivity::class.java)
-            intent.putExtra("friendName", selectedFriend)
-            intent.putExtra("selectedPrice", selectedPrice)
-            context.startActivity(intent)
-            dialog.dismiss()
         }
-        dialog.setCanceledOnTouchOutside(false)
-        dialog.show()
 
-        dialog.window?.setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_RESIZE)
+        override fun getItemCount(): Int = giftList.size
 
+        class GiftViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+            val giftImage: ImageView = itemView.findViewById(R.id.giftImage)
+        }
     }
 
     override fun onDestroyView() {
