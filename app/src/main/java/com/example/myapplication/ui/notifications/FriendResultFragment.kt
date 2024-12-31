@@ -1,4 +1,4 @@
-package com.example.myapplication.ui.randomgift
+package com.example.myapplication.ui.friendresult
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,7 +10,7 @@ import androidx.navigation.fragment.findNavController
 import com.example.myapplication.databinding.StartRandomgiftBinding
 
 
-class RandomgiftFragment : Fragment() {
+class FriendResultFragment : Fragment() {
 
     private var _binding: StartRandomgiftBinding? = null
     private val binding get() = _binding!!
@@ -21,14 +21,6 @@ class RandomgiftFragment : Fragment() {
     ): View? {
         _binding = StartRandomgiftBinding.inflate(inflater, container, false)
         return binding.root
-    }
-
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-
-        binding.startButton.setOnClickListener {
-            findNavController().navigate(R.id.action_start_to_second)
-        }
     }
 
     override fun onDestroyView() {

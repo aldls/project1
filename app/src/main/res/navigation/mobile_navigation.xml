@@ -19,7 +19,28 @@
 
     <fragment
         android:id="@+id/navigation_notifications"
-        android:name="com.example.myapplication.ui.test.TestFragment"
+        android:name="com.example.myapplication.ui.randomgift.RandomgiftFragment"
         android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_test" />
+        tools:layout="@layout/start_randomgift">
+        <action
+            android:id="@+id/action_start_to_second"
+            app:destination="@+id/second_randomgift" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/second_randomgift"
+        android:name="com.example.myapplication.ui.second.SecondFragment"
+        android:label="Next Fragment"
+        tools:layout="@layout/second_randomgift">
+        <action
+            android:id="@+id/action_second_to_result"
+            app:destination="@+id/result_friend" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/result_friend"
+        android:name="com.example.myapplication.ui.friendresult.FriendResultFragment"
+        android:label="Result Friend"
+        tools:layout="@layout/result_friend"/>
+
 </navigation>
