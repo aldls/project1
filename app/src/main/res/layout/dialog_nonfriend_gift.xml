@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="@drawable/round">
+
+    <TextView
+        android:id="@+id/relationInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="Who?"/>
+
+    <RadioGroup
+        android:id="@+id/relationGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/ageInput"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp">
+
+        <RadioButton
+            android:id="@+id/relation1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="친구" />
+
+        <RadioButton
+            android:id="@+id/relation2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="가족" />
+
+        <RadioButton
+            android:id="@+id/relation3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="지인" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/ageInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="Age?"/>
+
+    <RadioGroup
+        android:id="@+id/ageGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/ageInput"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp">
+
+        <RadioButton
+            android:id="@+id/age1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10대" />
+
+        <RadioButton
+            android:id="@+id/age2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20대" />
+
+        <RadioButton
+            android:id="@+id/age3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30대" />
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/nonfriendpriceInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Current price: 5000"
+        android:layout_margin="8dp"/>
+
+    <SeekBar
+        android:id="@+id/price_seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"/>
+    <!--    추가 버튼-->
+
+    <Button
+        android:id="@+id/nonfriendaddButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round"
+        android:backgroundTint="#AA81DB"
+        android:text="Save" />
+
+</LinearLayout>

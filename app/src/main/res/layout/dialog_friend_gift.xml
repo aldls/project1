@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="@drawable/round"
+    app:navGraph="@navigation/mobile_navigation"
+    app:defaultNavHost="true">
+
+    <EditText
+        android:id="@+id/friendnameInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:hint="Find friend"
+        android:inputType="text"/>
+
+    <ListView
+        android:id="@+id/friendlistView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="8dp" />
+
+    <TextView
+        android:id="@+id/friendpriceInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Current price: 5000"
+        android:layout_margin="8dp"/>
+
+    <SeekBar
+        android:id="@+id/price_seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"/>
+    <!--    추가 버튼-->
+    <Button
+        android:id="@+id/friendaddButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round"
+        android:backgroundTint="#AA81DB"
+        android:text="Save" />
+
+</LinearLayout>
