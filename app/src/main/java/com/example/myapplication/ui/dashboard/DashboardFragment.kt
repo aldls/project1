@@ -26,6 +26,7 @@ import androidx.appcompat.app.AlertDialog
 import androidx.lifecycle.ViewModelProvider
 import com.example.myapplication.databinding.FragmentDashboardBinding
 import com.example.myapplication.R
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import java.io.File
 import java.text.SimpleDateFormat
 import java.util.Date
@@ -36,6 +37,11 @@ import java.util.Locale
 
 
 class GalleryFragment : Fragment() {
+
+
+
+
+
 
     private lateinit var dashboardViewModel: DashboardViewModel
 
@@ -64,6 +70,17 @@ class GalleryFragment : Fragment() {
 
         //loadImagesFromStorage()
         return view
+    }
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        val bottomNavView = requireActivity().findViewById<BottomNavigationView>(R.id.nav_view)
+        bottomNavView.post {
+            val bottomNavHeight = bottomNavView.height
+
+            // Adjust fragment content padding based on BottomNavigationView height
+            view.setPadding(0, 0, 0, bottomNavHeight)
+        }
     }
 
     private fun setupRecyclerView() {
