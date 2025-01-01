@@ -2,6 +2,7 @@ package com.example.myapplication.ui.home
 
 import android.app.Dialog
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -13,55 +14,51 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.myapplication.R
 import com.example.myapplication.databinding.FragmentHomeBinding
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class HomeFragment : Fragment() {
 
     private var _binding: FragmentHomeBinding? = null
-
-    // This property is only valid between onCreateView and
-    // onDestroyView.
     private val binding get() = _binding!!
-    
-    private lateinit var productinfoList: ArrayList<ProductInfo>
+
+    private lateinit var sharedViewModel: SharedViewModel
     private lateinit var adapter: MainListAdapter
-    
 
     override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
+        inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val homeViewModel =
-            ViewModelProvider(this).get(HomeViewModel::class.java) //ViewModel 초기화
-
+        sharedViewModel = ViewModelProvider(requireActivity())[SharedViewModel::class.java]
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
-        val root: View = binding.root
+        return binding.root
+    }
 
-//        val textView: TextView = binding.textHome
-//        homeViewModel.text.observe(viewLifecycleOwner) {
-//            textView.text = it
-//        }
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
 
-        productinfoList = arrayListOf(
-            ProductInfo("red shoes","11,000","www.naver.com","humanicon"),
-            ProductInfo("blue shoes","12,000","www.naver.com","humanicon"),
-            ProductInfo("red pants","43,000","www.naver.com","humanicon"),
-            ProductInfo("jacket","11,000","www.naver.com","humanicon"),
-            ProductInfo("pink shorts","16,000","www.naver.com","humanicon")
-        )
-        
-        adapter = MainListAdapter(requireContext(), productinfoList)
-        
-        val listView: ListView = root.findViewById(R.id.mainListView)
-        listView.adapter = adapter
+        // Adjust layout to account for BottomNavigationView
+        view.post {
+            val bottomNavView = requireActivity().findViewById<BottomNavigationView>(R.id.nav_view)
+            bottomNavView?.let {
+                val bottomNavHeight = it.height
+                view.setPadding(0, 0, 0, bottomNavHeight)
+            } ?: run {
+                Log.e("HomeFragment", "BottomNavigationView is null")
+            }
+        }
 
-//        팝업으로 입력 받기
-        val addButton: Button = root.findViewById(R.id.addButton)
-        addButton.setOnClickListener{
+        // Set up ListView
+        val listView: ListView = view.findViewById(R.id.mainListView)
+        sharedViewModel.productList.observe(viewLifecycleOwner) { productList ->
+            adapter = MainListAdapter(requireContext(), productList)
+            listView.adapter = adapter
+        }
+
+        // Add Button for Adding New Products
+        val addButton: Button = view.findViewById(R.id.addButton)
+        addButton.setOnClickListener {
             showAddProductDialog()
         }
-        return root
-
     }
 
     override fun onDestroyView() {
@@ -69,7 +66,7 @@ class HomeFragment : Fragment() {
         _binding = null
     }
 
-    private fun showAddProductDialog(){
+    private fun showAddProductDialog() {
         val dialog = Dialog(requireContext())
         dialog.setContentView(R.layout.dialog_add_product)
         dialog.setCancelable(true)
@@ -79,18 +76,16 @@ class HomeFragment : Fragment() {
         val linkInput: EditText = dialog.findViewById(R.id.dialoglinkInput)
         val addButton: Button = dialog.findViewById(R.id.dialogaddButton)
 
-        addButton.setOnClickListener{
+        addButton.setOnClickListener {
             val name = nameInput.text.toString().trim()
             val price = priceInput.text.toString().trim()
             val link = linkInput.text.toString().trim()
 
-            if(name.isEmpty()){
+            if (name.isEmpty()) {
                 Toast.makeText(requireContext(), "Please enter product name", Toast.LENGTH_SHORT).show()
-            }
-            else{
+            } else {
                 val newProduct = ProductInfo(name, price, link, "humanicon")
-                productinfoList.add(newProduct)
-                adapter.notifyDataSetChanged()
+                sharedViewModel.addProduct(newProduct)
                 dialog.dismiss()
                 Toast.makeText(requireContext(), "Product added", Toast.LENGTH_SHORT).show()
             }

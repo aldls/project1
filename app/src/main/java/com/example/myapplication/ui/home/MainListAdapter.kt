@@ -14,7 +14,7 @@ import com.bumptech.glide.Glide
 import com.example.myapplication.R
 import kotlinx.coroutines.CoroutineScope
 
-class MainListAdapter (val context: Context, val productList: ArrayList<ProductInfo>) : BaseAdapter() {
+class MainListAdapter (val context: Context, val productList: MutableList<ProductInfo>) : BaseAdapter() {
 
 
     override fun getCount(): Int {
@@ -28,10 +28,9 @@ class MainListAdapter (val context: Context, val productList: ArrayList<ProductI
     override fun getItemId(p0: Int): Long {
         return 0
     }
-
     override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {
 
-        val view = convertView ?: LayoutInflater.from(context).inflate(R.layout.main_lv_item, parent, false)
+        val view: View = convertView ?: LayoutInflater.from(context).inflate(R.layout.list_item, parent, false)
 
         val productImg = view.findViewById<ImageView>(R.id.profileImg)
         val name = view.findViewById<TextView>(R.id.NameTv)
