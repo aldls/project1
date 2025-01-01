@@ -13,6 +13,7 @@
         android:scaleType="centerCrop" />
 
     <TextView
+        android:fontFamily="@font/wordshape"
         android:id="@+id/enlargedTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

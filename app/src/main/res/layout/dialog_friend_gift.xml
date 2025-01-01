@@ -11,6 +11,7 @@
     app:defaultNavHost="true">
 
     <EditText
+        android:fontFamily="@font/wordshape"
         android:id="@+id/friendnameInput"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -19,12 +20,14 @@
         android:inputType="text"/>
 
     <ListView
+        android:fontFamily="@font/wordshape"
         android:id="@+id/friendlistView"
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:layout_margin="8dp" />
 
     <TextView
+        android:fontFamily="@font/wordshape"
         android:id="@+id/friendpriceInput"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -32,12 +35,14 @@
         android:layout_margin="8dp"/>
 
     <SeekBar
+
         android:id="@+id/price_seekbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"/>
     <!--    추가 버튼-->
     <Button
+        android:fontFamily="@font/wordshape"
         android:id="@+id/friendaddButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

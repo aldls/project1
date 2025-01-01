@@ -19,6 +19,7 @@
         app:srcCompat="@mipmap/ic_launcher_round" />
 
     <TextView
+        android:fontFamily="@font/wordshape"
         android:id="@+id/NameTv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
