@@ -18,8 +18,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.myapplication.MainActivity
 import com.example.myapplication.R
 import com.example.myapplication.databinding.SecondRandomgiftBinding
-import com.example.myapplication.data.giftInfoList
-import com.example.myapplication.data.GiftItem
+import com.example.myapplication.data.GiftItem2
+import com.example.myapplication.data.giftInfoList2
 import com.example.myapplication.ui.notifications.NotificationsViewModel
 
 class ThirdFragment : Fragment() {
@@ -39,14 +39,14 @@ class ThirdFragment : Fragment() {
 
         val recyclerView: RecyclerView = root.findViewById(R.id.recyclerView)
         recyclerView.layoutManager = GridLayoutManager(requireContext(), 3)
-        recyclerView.adapter = GiftAdapter(giftInfoList) { giftItem ->
+        recyclerView.adapter = GiftAdapter(giftInfoList2) { giftItem ->
             showCustomDialog(giftItem)
         }
 
         return root
     }
 
-    private fun showCustomDialog(giftItem: GiftItem) {
+    private fun showCustomDialog(giftItem: GiftItem2) {
         val customdialogView =
             LayoutInflater.from(requireContext()).inflate(R.layout.dialog_gift_info, null)
 
@@ -78,8 +78,8 @@ class ThirdFragment : Fragment() {
     }
 
     class GiftAdapter(
-        private val items: List<GiftItem>,
-        private val onItemClick: (GiftItem) -> Unit = {}
+        private val items: List<GiftItem2>,
+        private val onItemClick: (GiftItem2) -> Unit = {}
     ) : RecyclerView.Adapter<GiftAdapter.GiftViewHolder>() {
 
         override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): GiftViewHolder {
@@ -95,10 +95,9 @@ class ThirdFragment : Fragment() {
         override fun getItemCount(): Int = items.size
 
         inner class GiftViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-            val giftImageView: ImageView = itemView.findViewById(R.id.selectedgiftImg)
+            val giftImageView: ImageView = itemView.findViewById(R.id.giftImage)
 
-            fun bind(giftItem: GiftItem) {
-                giftImageView.setImageResource(giftItem.imageRes)
+            fun bind(giftItem: GiftItem2) {
                 giftImageView.setOnClickListener {
                     onItemClick(giftItem)
                 }

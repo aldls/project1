@@ -95,10 +95,9 @@ class SecondFragment : Fragment() {
         override fun getItemCount(): Int = items.size
 
         inner class GiftViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-            val giftImageView: ImageView = itemView.findViewById(R.id.selectedgiftImg)
+            val giftImageView: ImageView = itemView.findViewById(R.id.giftImage)
 
             fun bind(giftItem: GiftItem) {
-                giftImageView.setImageResource(giftItem.imageRes)
                 giftImageView.setOnClickListener {
                     onItemClick(giftItem)
                 }
