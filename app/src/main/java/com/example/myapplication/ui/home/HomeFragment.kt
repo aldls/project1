@@ -110,7 +110,7 @@ class HomeFragment : Fragment() {
                     name = name,
                     price = price,
                     link = link,
-                    imageUri = selectedImageUri ?: Uri.parse("android.resource://${requireContext().packageName}/${R.drawable.gift}")
+                    imageUri = selectedImageUri ?: Uri.parse("android.resource://${requireContext().packageName}/${R.drawable.boxrmv}")
                 )
                 sharedViewModel.addProduct(newProduct)
                 dialog.dismiss()

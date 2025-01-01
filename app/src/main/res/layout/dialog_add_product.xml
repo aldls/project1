@@ -41,7 +41,9 @@
         android:id="@+id/dialogselectPhotoButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Select Photo" />
+        android:background="@drawable/round"
+        android:backgroundTint="#F4C4D2"
+        android:text="사진 고르기/찍기" />
 
     <!--    추가 버튼-->
     <Button
@@ -50,7 +52,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/round"
-        android:backgroundTint="#AA81DB"
-        android:text="Save" />
+        android:backgroundTint="#BD7D8C"
+        android:text="저장" />
 
 </LinearLayout>
