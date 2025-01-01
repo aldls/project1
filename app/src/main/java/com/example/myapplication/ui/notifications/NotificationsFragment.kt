@@ -87,7 +87,10 @@ class RandomgiftFragment : Fragment() {
         val firstdialog = androidx.appcompat.app.AlertDialog.Builder(context)
             .setTitle("Friend Search")
             .setView(dialogView)
-            .setNegativeButton("Cancel", null)
+            .setNegativeButton("cancel") { dialog, _ ->
+                dialog.dismiss()
+                findNavController().navigate(R.id.action_end_to_start)
+            }
             .create()
         friendaddButton.setOnClickListener {
             val selectedFriend = searchInput.text.toString()
@@ -133,7 +136,10 @@ class RandomgiftFragment : Fragment() {
         val seconddialog = androidx.appcompat.app.AlertDialog.Builder(context)
             .setTitle("Search Present")
             .setView(dialogView)
-            .setNegativeButton("Cancel", null)
+            .setNegativeButton("cancel") { dialog, _ ->
+                dialog.dismiss()
+                findNavController().navigate(R.id.action_end_to_start)
+            }
             .create()
         nonfriendaddButton.setOnClickListener {
             val selectedRelationId = relationGroup.checkedRadioButtonId

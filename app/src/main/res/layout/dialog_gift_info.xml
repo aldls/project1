@@ -49,13 +49,4 @@
         android:layout_margin="8dp"
         tools:text="상품 링크"/>
 
-
-    <Button
-        android:id="@+id/friendaddButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/round"
-        android:backgroundTint="#AA81DB"
-        android:text="Save" />
-
 </LinearLayout>

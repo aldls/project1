@@ -34,13 +34,22 @@
         android:id="@+id/second_randomgift"
         android:name="com.example.myapplication.ui.second.SecondFragment"
         android:label="Second Fragment"
-        tools:layout="@layout/second_randomgift"/>
+        tools:layout="@layout/second_randomgift">
+        <action
+            android:id="@+id/action_end_to_start"
+            app:destination="@+id/navigation_notifications"/>
+    </fragment>
 
     <fragment
         android:id="@+id/third_randomgift"
         android:name="com.example.myapplication.ui.third.ThirdFragment"
         android:label="Third Fragment"
-        tools:layout="@layout/second_randomgift"/>
+        tools:layout="@layout/second_randomgift">
+        <action
+            android:id="@+id/action_end_to_start"
+            app:destination="@+id/navigation_notifications"/>
+    </fragment>
+
 
 
 

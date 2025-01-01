@@ -72,6 +72,7 @@ class ThirdFragment : Fragment() {
             .setCancelable(true)
             .setPositiveButton("닫기") { dialog, _ ->
                 dialog.dismiss()
+                findNavController().navigate(R.id.action_end_to_start)
             }
             .create()
             .show()
