@@ -19,6 +19,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.myapplication.R
 import com.example.myapplication.databinding.FragmentHomeBinding
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import java.io.File
 import java.text.SimpleDateFormat
 import java.util.*
@@ -59,11 +60,20 @@ class HomeFragment : Fragment() {
     ): View {
         sharedViewModel = ViewModelProvider(requireActivity())[SharedViewModel::class.java]
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
+
+
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+
+
+
+
         super.onViewCreated(view, savedInstanceState)
+
+
+
 
         // Initialize adapter
         adapter = MainListAdapter(requireContext(), mutableListOf())

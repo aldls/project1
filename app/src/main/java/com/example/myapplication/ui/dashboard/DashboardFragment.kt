@@ -75,12 +75,13 @@ class GalleryFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         val bottomNavView = requireActivity().findViewById<BottomNavigationView>(R.id.nav_view)
-        bottomNavView.post {
+        bottomNavView?.post {
             val bottomNavHeight = bottomNavView.height
 
             // Adjust fragment content padding based on BottomNavigationView height
             view.setPadding(0, 0, 0, bottomNavHeight)
         }
+
     }
 
     private fun setupRecyclerView() {
