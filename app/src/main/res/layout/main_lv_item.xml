@@ -26,8 +26,8 @@
         android:layout_marginStart="16dp"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/profileImg"
-        app:layout_constraintTop_toTopOf="@+id/profileImg"
+        app:layout_constraintStart_toEndOf="@+id/productImg"
+        app:layout_constraintTop_toTopOf="@+id/productImg"
         tools:next="name"/>
 
     <TextView
@@ -36,7 +36,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="12dp"
         android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="@+id/profileImg"
+        app:layout_constraintBottom_toBottomOf="@+id/productImg"
         app:layout_constraintStart_toStartOf="@+id/NameTv"
         tools:text="Price" />
 
