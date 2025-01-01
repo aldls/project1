@@ -1,6 +1,6 @@
 <resources>
-    <string name="app_name">ThreeTapApp</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="app_name">마니도</string>
+    <string name="title_home">마이</string>
+    <string name="title_dashboard">니가</string>
+    <string name="title_notifications">또</string>
 </resources>

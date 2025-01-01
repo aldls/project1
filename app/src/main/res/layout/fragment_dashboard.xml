@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/offwhite2"
     xmlns:support="http://schemas.android.com/apk/support"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -13,11 +14,12 @@
 
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/toolbar"
+
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        app:title="test1"
+        app:title="My"
         android:background="@drawable/rectangle"
-        android:backgroundTint="@android:color/transparent"
+        android:backgroundTint="@color/offwhite2"
         app:titleTextColor="@color/black"
         app:titleTextAppearance="@style/TextAppearance.AppCompat.Large"
         android:layout_marginBottom="10dp"
@@ -45,6 +47,8 @@
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/nestedViewPager"
 
+
+
         app:layout_constraintTop_toBottomOf="@id/guideline"
 
         android:layout_width="match_parent"
@@ -52,7 +56,7 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
-        android:background="@color/whiteish"
+        android:background="@color/offwhite2"
 
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -62,16 +66,16 @@
 
     <Button
         android:id="@+id/buttonAddPhoto"
-        android:layout_width="93dp"
-        android:layout_height="89dp"
-        android:layout_marginEnd="4dp"
-        android:layout_marginBottom="112dp"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="10dp"
         android:foreground="@drawable/plusiconfinal"
         android:background="@android:color/transparent"
 
 
 
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintRight_toRightOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
