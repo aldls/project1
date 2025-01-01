@@ -22,6 +22,6 @@
         android:layout_height="match_parent"
 
         android:scaleType="centerCrop"
-        app:srcCompat='@drawable/splash'/>
+        app:srcCompat='@drawable/splashgift'/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -31,7 +31,7 @@ class RandomgiftFragment : Fragment() {
 
         binding.friendButton.setOnClickListener {
             findNavController().navigate(R.id.action_start_to_second)
-            showFriendSearchFirstDialog(requireContext(), listOf("friend1", "friend2", "friend3"))
+            showFriendSearchFirstDialog(requireContext(), listOf("김나혜", "김민범", "김민지", "김영민", "김준협", "박민재", "박민영"))
         }
         binding.notfriendButton.setOnClickListener{
             findNavController().navigate(R.id.action_start_to_third)
